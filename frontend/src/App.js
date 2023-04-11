@@ -390,40 +390,52 @@ const CourseText = (
     page,
     pages,
     assistant,
-  }) =>
-    <>
-    <h1 dangerouslySetInnerHTML={{__html: page.title}}/>
-    {page.steps.map((part, index) =>
-      <div
-        key={index}
-        id={`step-text-${index}`}
-        className={index > 0 ? 'pt-3' : ''}
-        style={index > step.index ? {display: 'none'} : {}}
-      >
-        <Markdown html={part.text} copyFunc={text => bookSetState("editorContent", text)}/>
-        <hr style={{ margin: '0' }}/>
-      </div>
-    )}
-      <Assistant {...assistant} step={step}/>
-    {/* pt-3 is Bootstrap's helper class. Shorthand for padding-top: 1rem. Available classes are pt-{1-5} */}
-    <div className='pt-3'>
-      {page.index > 0 &&
-      <button className="btn btn-primary previous-button"
-              onClick={() => movePage(-1)}>
-        {terms.previous}
-      </button>}
-      {" "}
-      {page.index < Object.keys(pages).length - 1 && step.index === page.steps.length - 1 &&
-      <button className="btn btn-success next-button"
-              onClick={() => movePage(+1)}>
-        {terms.next}
-      </button>}
-    </div>
-    <br/>
-    {
-      user.developerMode && <StepButtons/>
-    }
-  </>
+  }) => {
+    const copyTextToClipboard = () => {
+      const stepText = page.steps[step.index].text;
+      navigator.clipboard.writeText(stepText);
+    };
+
+    return (
+      <>
+        <h1 dangerouslySetInnerHTML={{__html: page.title}}/>
+        {page.steps.map((part, index) =>
+          <div
+            key={index}
+            id={`step-text-${index}`}
+            className={index > 0 ? 'pt-3' : ''}
+            style={index > step.index ? {display: 'none'} : {}}
+          >
+            <Markdown html={part.text} copyFunc={text => bookSetState("editorContent", text)}/>
+            <hr style={{ margin: '0' }}/>
+          </div>
+        )}
+        <Assistant {...assistant} step={step}/>
+        <div className='pt-3'>
+          {page.index > 0 &&
+          <button className="btn btn-primary previous-button"
+                  onClick={() => movePage(-1)}>
+            {terms.previous}
+          </button>}
+          {" "}
+          {page.index < Object.keys(pages).length - 1 && step.index === page.steps.length - 1 &&
+          <button className="btn btn-success next-button"
+                  onClick={() => movePage(+1)}>
+            {terms.next}
+          </button>}
+          {" "}
+          {step.index === page.steps.length - 1 &&
+          <button className="btn btn-secondary copy-button"
+                  onClick={copyTextToClipboard}>
+            {terms.copy}
+          </button>}
+        </div>
+        <br/>
+        {user.developerMode && <StepButtons/>}
+      </>
+    );
+};
+
 
 class AppComponent extends React.Component {
   render() {

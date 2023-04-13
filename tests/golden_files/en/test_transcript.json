@@ -4412,8 +4412,23 @@
             "passed": true,
             "result": [
                 {
-                    "text": "26\n",
-                    "type": "stdout"
+                    "data": [
+                        {
+                            "didyoumean": [],
+                            "exception": {
+                                "message": "'BirdsEye' object has no attribute 'trace_string_deep'",
+                                "type": "AttributeError"
+                            },
+                            "frames": [],
+                            "friendly": "<p>An <code>AttributeError</code> occurs when the code contains something like\n    <code>object.x</code>\nand <code>x</code> is not a method or attribute (variable) belonging to <code>object</code>.</p>\n<p>The object <code>eye</code> has no attribute named <code>trace_string_deep</code>.\nThe following are some of its known attributes:\n<code>_add_iteration, _after_expr, _call_id, _check_inner_call, _code_infos, _db_func, _db_uri, _enter_call, _exception_value, ...</code>.</p>",
+                            "tail": ""
+                        }
+                    ],
+                    "text": [
+                        "Traceback (most recent call last):",
+                        "AttributeError: 'BirdsEye' object has no attribute 'trace_string_deep'"
+                    ],
+                    "type": "traceback"
                 }
             ]
         },
@@ -4438,8 +4453,23 @@
             "passed": true,
             "result": [
                 {
-                    "text": "['A', 'a', 'i']\n['m', 'z', 'n', 'g']\n",
-                    "type": "stdout"
+                    "data": [
+                        {
+                            "didyoumean": [],
+                            "exception": {
+                                "message": "'BirdsEye' object has no attribute 'trace_string_deep'",
+                                "type": "AttributeError"
+                            },
+                            "frames": [],
+                            "friendly": "<p>An <code>AttributeError</code> occurs when the code contains something like\n    <code>object.x</code>\nand <code>x</code> is not a method or attribute (variable) belonging to <code>object</code>.</p>\n<p>The object <code>eye</code> has no attribute named <code>trace_string_deep</code>.\nThe following are some of its known attributes:\n<code>_add_iteration, _after_expr, _call_id, _check_inner_call, _code_infos, _db_func, _db_uri, _enter_call, _exception_value, ...</code>.</p>",
+                            "tail": ""
+                        }
+                    ],
+                    "text": [
+                        "Traceback (most recent call last):",
+                        "AttributeError: 'BirdsEye' object has no attribute 'trace_string_deep'"
+                    ],
+                    "type": "traceback"
                 }
             ]
         },
@@ -4478,8 +4508,23 @@
             "passed": true,
             "result": [
                 {
-                    "text": "d\n",
-                    "type": "stdout"
+                    "data": [
+                        {
+                            "didyoumean": [],
+                            "exception": {
+                                "message": "'BirdsEye' object has no attribute 'trace_string_deep'",
+                                "type": "AttributeError"
+                            },
+                            "frames": [],
+                            "friendly": "<p>An <code>AttributeError</code> occurs when the code contains something like\n    <code>object.x</code>\nand <code>x</code> is not a method or attribute (variable) belonging to <code>object</code>.</p>\n<p>The object <code>eye</code> has no attribute named <code>trace_string_deep</code>.\nThe following are some of its known attributes:\n<code>_add_iteration, _after_expr, _call_id, _check_inner_call, _code_infos, _db_func, _db_uri, _enter_call, _exception_value, ...</code>.</p>",
+                            "tail": ""
+                        }
+                    ],
+                    "text": [
+                        "Traceback (most recent call last):",
+                        "AttributeError: 'BirdsEye' object has no attribute 'trace_string_deep'"
+                    ],
+                    "type": "traceback"
                 }
             ]
         },
@@ -5062,8 +5107,23 @@
             "passed": true,
             "result": [
                 {
-                    "text": "Hello\nHello\n",
-                    "type": "stdout"
+                    "data": [
+                        {
+                            "didyoumean": [],
+                            "exception": {
+                                "message": "'BirdsEye' object has no attribute 'trace_string_deep'",
+                                "type": "AttributeError"
+                            },
+                            "frames": [],
+                            "friendly": "<p>An <code>AttributeError</code> occurs when the code contains something like\n    <code>object.x</code>\nand <code>x</code> is not a method or attribute (variable) belonging to <code>object</code>.</p>\n<p>The object <code>eye</code> has no attribute named <code>trace_string_deep</code>.\nThe following are some of its known attributes:\n<code>_add_iteration, _after_expr, _call_id, _check_inner_call, _code_infos, _db_func, _db_uri, _enter_call, _exception_value, ...</code>.</p>",
+                            "tail": ""
+                        }
+                    ],
+                    "text": [
+                        "Traceback (most recent call last):",
+                        "AttributeError: 'BirdsEye' object has no attribute 'trace_string_deep'"
+                    ],
+                    "type": "traceback"
                 }
             ]
         },
@@ -5630,8 +5690,23 @@
             "passed": true,
             "result": [
                 {
-                    "text": "OK\nError! 'Bob' != True\nError! 'Bob' != False\n",
-                    "type": "stdout"
+                    "data": [
+                        {
+                            "didyoumean": [],
+                            "exception": {
+                                "message": "'BirdsEye' object has no attribute 'trace_string_deep'",
+                                "type": "AttributeError"
+                            },
+                            "frames": [],
+                            "friendly": "<p>An <code>AttributeError</code> occurs when the code contains something like\n    <code>object.x</code>\nand <code>x</code> is not a method or attribute (variable) belonging to <code>object</code>.</p>\n<p>The object <code>eye</code> has no attribute named <code>trace_string_deep</code>.\nThe following are some of its known attributes:\n<code>_add_iteration, _after_expr, _call_id, _check_inner_call, _code_infos, _db_func, _db_uri, _enter_call, _exception_value, ...</code>.</p>",
+                            "tail": ""
+                        }
+                    ],
+                    "text": [
+                        "Traceback (most recent call last):",
+                        "AttributeError: 'BirdsEye' object has no attribute 'trace_string_deep'"
+                    ],
+                    "type": "traceback"
                 }
             ]
         },
@@ -5903,8 +5978,23 @@
             "passed": true,
             "result": [
                 {
-                    "text": "True\n",
-                    "type": "stdout"
+                    "data": [
+                        {
+                            "didyoumean": [],
+                            "exception": {
+                                "message": "'BirdsEye' object has no attribute 'trace_string_deep'",
+                                "type": "AttributeError"
+                            },
+                            "frames": [],
+                            "friendly": "<p>An <code>AttributeError</code> occurs when the code contains something like\n    <code>object.x</code>\nand <code>x</code> is not a method or attribute (variable) belonging to <code>object</code>.</p>\n<p>The object <code>eye</code> has no attribute named <code>trace_string_deep</code>.\nThe following are some of its known attributes:\n<code>_add_iteration, _after_expr, _call_id, _check_inner_call, _code_infos, _db_func, _db_uri, _enter_call, _exception_value, ...</code>.</p>",
+                            "tail": ""
+                        }
+                    ],
+                    "text": [
+                        "Traceback (most recent call last):",
+                        "AttributeError: 'BirdsEye' object has no attribute 'trace_string_deep'"
+                    ],
+                    "type": "traceback"
                 }
             ]
         },

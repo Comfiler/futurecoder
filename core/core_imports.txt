@@ -2,12 +2,16 @@ _virtualenv.py
 astcheck.py
 asttokens
 birdseye
+cached_property.py
 cheap_repr
 didyoumean
 executing
 friendly_traceback
+greenlet
+humanize
 littleutils
 markdown
+markupsafe
 packaging
 pkg_resources
 pure_eval
@@ -17,4 +21,6 @@ python_runner
 sentry_sdk
 six.py
 snoop
+sqlalchemy
 stack_data
+typing_extensions.py

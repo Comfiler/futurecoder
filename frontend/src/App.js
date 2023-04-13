@@ -393,6 +393,12 @@ const CourseText = (
   }) => {
     const copyTextToClipboard = () => {
       const stepText = page.steps[step.index].text;
+      const regex = /<code>(.*?)<\/code\/?>/g;
+      const codeText = [];
+      let match;
+      while ((match = regex.exec(stepText))) {
+        codeText.push(match[1]);
+      }
       navigator.clipboard.writeText(stepText);
     };
 

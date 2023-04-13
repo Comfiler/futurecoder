@@ -393,6 +393,12 @@ const CourseText = (
   }) => {
     const copyTextToClipboard = () => {
       const stepText = page.steps[step.index].text;
+      const regex = /<code>(.*?)<\/code\/?>/g;
+      const codeText = [];
+      let match;
+      while ((match = regex.exec(stepText))) {
+        codeText.push(match[1]);
+      }
       navigator.clipboard.writeText(stepText);
     };
 
@@ -427,7 +433,7 @@ const CourseText = (
           {step.index === page.steps.length - 1 &&
           <button className="btn btn-secondary copy-button"
                   onClick={copyTextToClipboard}>
-          <span dangerouslySetInnerHTML={{__html: '&#x1f4cb;'}}></span> {terms.copy_text}
+            {terms.copy_text}
           </button>}
         </div>
         <br/>

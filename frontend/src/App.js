@@ -427,7 +427,7 @@ const CourseText = (
           {step.index === page.steps.length - 1 &&
           <button className="btn btn-secondary copy-button"
                   onClick={copyTextToClipboard}>
-            {terms.copy_text}
+            {terms.copy}
           </button>}
         </div>
         <br/>

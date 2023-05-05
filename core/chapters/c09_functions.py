@@ -464,6 +464,23 @@ Make sure that you don't call `quadruple` inside the function body of `quadruple
                     return x * 4
 
                 return quadruple
+        class defined_twice(ExerciseStep, MessageStep):
+            """
+            You defined `quadruple` more than once. You should define it only once.
+            """
+        after_success = True
+
+        def check(self):
+            return len(self.functions) == 1
+
+        def solution(self):
+            def quadruple(x: int):
+                return x * 4
+
+            return quadruple
+
+    def check(self):
+        return len(self.functions) == 1
 
     final_text = """
 Well done! Here are two possible solutions:

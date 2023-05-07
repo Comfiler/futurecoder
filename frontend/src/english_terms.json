@@ -1,6 +1,7 @@
 {
   "stop": "Stop",
   "run": "Run",
+  "copy_text": "Copy Text",
   "ask_for_help": "Ask for Help",
   "question_wizard": "Question Wizard",
   "previous": "Previous",

@@ -58,6 +58,25 @@ import terms from "./terms.json"
 import _ from "lodash";
 import {otherVisibleLanguages} from "./languages";
 
+document.addEventListener("keydown", function(event) {
+  switch(event.key) {
+    // If the left arrow key is pressed
+    case "ArrowLeft":
+      // Navigate to the previous page in the history
+      window.history.back();
+      break;
+    // If the right arrow key is pressed
+    case "ArrowRight":
+      // Navigate to the next page in the history
+      window.history.forward();
+      break;
+    // If any other key is pressed
+    default:
+      return;
+  }
+  // Prevent the default behavior of the key press
+  event.preventDefault();
+});
 
 const EditorButtons = (
   {

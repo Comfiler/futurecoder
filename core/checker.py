@@ -45,6 +45,25 @@ class FullRunner(EnhancedRunner):
 
 default_runner = FullRunner(filename="/my_program.py")
 
+def check_for_duplicate_method_declaration(input: str):
+    words = input.split()
+    method_header_list = []
+    temp_method_header = ""
+    for i in range(len(words)):
+        if words[i] == "def":
+            temp_method_header = "def " + words[i+1]
+            print(temp_method_header)
+            method_header_list.append(temp_method_header)
+
+    unique_headers = []
+    for method_header in method_header_list:
+        if method_header not in unique_headers:
+            unique_headers.append(method_header)
+        else:
+            return True
+
+    return False
+
 
 @catch_internal_errors
 def check_entry(entry, callback, runner=default_runner):
@@ -60,7 +79,8 @@ def check_entry(entry, callback, runner=default_runner):
         if not entry["input"].strip():
             return result
 
-        result["output"] = ""
+        if not check_for_duplicate_method_declaration(entry["input"]):
+            # This is where we need to warn the user
 
         def wrapped_callback(event_type, data):
             if event_type == "output":

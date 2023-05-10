@@ -80,6 +80,7 @@ def check_entry(entry, callback, runner=default_runner):
             return result
 
         if not check_for_duplicate_method_declaration(entry["input"]):
+            print(“temp”)
             # This is where we need to warn the user
 
         def wrapped_callback(event_type, data):
